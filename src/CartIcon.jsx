@@ -10,6 +10,8 @@ export function CartIcon({ count }) {
   };
 
   return (
-    {count} /* Always display the count */
+    <button onClick={handleCartClick} className="cart-icon">
+      🛒 Cart ({count}) {/* Display the count inside a button */}
+    </button>
   );
 }
